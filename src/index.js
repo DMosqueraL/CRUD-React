@@ -1,6 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+/**react-dom fue reemplazado por react-dom/client en React18 */
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/** Sentencia en desuso en React18
+ * ReactDOM.render(<App />, document.getElementById('root'));**/
+
+ ReactDOM.createRoot(<App />,document.getElementById('root'));

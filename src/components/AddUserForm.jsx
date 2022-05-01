@@ -18,7 +18,10 @@ const AddUserForm = (props) => {
             <input 
                 type="text" 
                 name="name"
-                ref={register({required: {value: true, message: 'Valor requerido'}})}
+                /**sentencia en desuso en React18, a continuación se muestra la manera actualizada
+                 * del atributo ref= ({...register
+                 * ref=*/
+                {...register({required: {value: true, message: 'Valor requerido'}})}
                 />
             <div>
                 {errors?.name?.message}
@@ -27,7 +30,10 @@ const AddUserForm = (props) => {
             <input 
                 type="text" 
                 name="username" 
-                ref={register({required: {value: true, message: 'Valor requerido'}})}
+                /**sentencia en desuso en React18, a continuación se muestra la manera actualizada
+                 * del atributo ref= ({...register
+                 * ref=*/
+                {...register({required: {value: true, message: 'Valor requerido'}})}
                 />
             <div>
                 {errors?.username?.message}
