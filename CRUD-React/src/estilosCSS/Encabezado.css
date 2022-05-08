@@ -1,0 +1,31 @@
+.contenedor-encabezado {
+    width: 100%;
+    margin: 10px 10px 50px 5px;
+    color: white;
+    box-shadow: 0 5px 15px 5px rgb(0 0 0 / 10%);
+}
+
+.imagen-encabezado {
+    height: auto; 
+    width: auto;
+    display: flex;
+    margin-left: 35px;
+}
+
+.contenedor-texto-encabezado {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;        
+}
+  
+.nombre-proyecto {
+    font-size: 2.5rem;
+    margin-left: 35px;    
+}
+
+.frase-encabezado {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-left: 35px;
+}

@@ -1,0 +1,7 @@
+.tabla-principal{
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 10px 25px 10px rgb(0 0 0 / 10%);
+    padding: 20px;
+}
