@@ -29,16 +29,18 @@ export function Tabla() {
       lastname: "Suárez",
       sex: "Masculino",
       job: "Médico",
-    },
+    },    
   ];
 
   const [users, setUsers] = useState(usersData);
 
   // console.log(users.name);
 
+  
+
   const addUser = (user) => {
-    user.id = uuidv4();
-    setUsers([...users, user]);
+    user.id = uuidv4();    
+    setUsers([...users, user]);    
   };
 
   // Eliminar usuario
@@ -75,7 +77,7 @@ export function Tabla() {
     setUsers(users.map((user) => (user.id === id ? updatedUser : user)));
   };
 
-  const [isOpen, openModal, closeModal] = useModal(false);
+  const [isOpen, openModal, closeModal] = useModal(false);  
 
   return (
     <div className="container">
@@ -91,6 +93,7 @@ export function Tabla() {
                 currentUser={currentUser}
                 updateUser={updateUser}
               />
+              
             </div>
           ) : (
             //Aquí se agregan usuarios
